@@ -46,7 +46,7 @@ export class EditComponent implements OnInit {
   }
   updateUser() {
     this.usersService.getUpdate(this.userID,this.editUserForm.value).subscribe((response : any) => {
-      
+      console.log('edit success')
     },err => {
       console.log(err)
     })

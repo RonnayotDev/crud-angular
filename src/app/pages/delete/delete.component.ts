@@ -24,6 +24,7 @@ export class DeleteComponent implements OnInit {
   deleteUser(id:number){
     this.usersService.getDelete(id).subscribe((response : any ) => {
       this.userList = response
+      console.log('delete success')
     },err => {
       console.log(err)
     })
