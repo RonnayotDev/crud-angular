@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Displaying show {{userList.length}} users</h2>
+    <div class="grid">
+        <div class="col-12 md:col-4 lg:col-4"  *ngFor="let item of userList">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <img [src]="item.avatar" [alt]="item.username" width="50%" style="border-radius: 50%;">
+                </div>
+                <div class="user-detail">
+                    <div class="detail-firstname-lastname">
+                        <h2>{{item.fname}} {{item.lname}}</h2>  
+                    </div>
+                    <div class="detail-username">
+                        <p>{{item.username}}</p>
+                    </div>
+                </div>
+                <div class="action">
+                    <a [routerLink]="'/view/'+item.id" class="test" class="view">View</a>
+                    <a [routerLink]="'/edit/'+item.id" class="edit">Edit</a>
+                    <a [routerLink]="'/delete/'+item.id" class="delete">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

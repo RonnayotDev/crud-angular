@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>Create User</h2>
+    <form [formGroup]="addUserForm" (submit)="createUser()">
+        <div class="username-form">
+            <p>Username : </p>
+            <input type="text" placeholder="Username" formControlName="username">
+        </div>
+        <div class="password-form">
+            <p>Password : </p>
+            <input type="password" placeholder="Password" formControlName="password">
+        </div>
+        <div class="Firstname-form">
+            <p>FirstName : </p>
+            <input type="text" placeholder="Firstname" formControlName="fname">
+        </div>
+        <div class="Lastname-form">
+            <p>LastName : </p>
+             <input type="text" placeholder="Lastname" formControlName="lname">
+        </div>
+        <div class="Email-form">
+            <p>Email : </p>
+            <input type="email" placeholder="Email" formControlName="email">
+        </div>
+       <div class="url-form">
+        <p>Avatar : </p>
+         <input type="text" placeholder="URL Picture" formControlName="avatar">
+       </div>
+        <button class="submit">Submit</button>
+       
+    </form>
+</div>

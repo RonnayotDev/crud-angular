@@ -1,0 +1,18 @@
+<div class="container" *ngIf="userView">
+  <div class="card-wrapper">
+    <div class="card-img">
+      <img [src]="userView.avatar" [alt]="userView.username" width="50%" />
+    </div>
+    <div class="user-detail">
+      <div class="detail-firstname-lastname">
+        <h2>{{ userView.fname }} {{ userView.lname }}</h2>
+      </div>
+      <div class="detail-username">
+        <p>{{ userView.username }}</p>
+      </div>
+    </div>
+    <div class="action">
+      <a href="/" class="back">Back</a>
+    </div>
+  </div>
+</div>

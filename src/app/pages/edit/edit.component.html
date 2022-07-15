@@ -1,0 +1,23 @@
+<div class="container" *ngIf="dataLoaded">
+    <h2>Edit User</h2>
+    <form [formGroup]="editUserForm" (submit)="updateUser()">
+        <div class="Firstname-form">
+            <p>FirstName : </p>
+            <input type="text" placeholder="Firstname" formControlName="fname">
+        </div>
+        <div class="Lastname-form">
+            <p>LastName : </p>
+             <input type="text" placeholder="Lastname" formControlName="lname">
+        </div>
+        <div class="Email-form">
+            <p>Email : </p>
+            <input type="email" placeholder="Email" formControlName="email">
+        </div>
+       <div class="url-form">
+        <p>Avatar : </p>
+         <input type="text" placeholder="URL Picture" formControlName="avatar">
+       </div>
+        <button class="submit">Submit</button>
+       
+    </form>
+</div>

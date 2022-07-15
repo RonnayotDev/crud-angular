@@ -1,0 +1,42 @@
+.container {
+  margin: 1rem;
+  padding: 1rem;
+}
+.card-wrapper {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action a {
+  margin: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+.action .view {
+  background-color: cornflowerblue;
+}
+.action .edit {
+  background-color: orange;
+}
+.action .delete {
+  background-color: crimson;
+}
+.user-detail .detail-firstname-lastname{
+    color: white;
+}
+.detail-username{
+    color: white;
+}

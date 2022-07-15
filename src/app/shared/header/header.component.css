@@ -1,0 +1,25 @@
+nav.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+a.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+a.nav-item-li {
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem;
+}
+a.nav-item-li:hover {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  color: white;
+}
